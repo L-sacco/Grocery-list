@@ -38,10 +38,13 @@ function BackToDefault() {
     input.focus();
 }
 function RemoveEverything() {
-    var anchor = document.querySelector('div[class="list"]');
-    anchor.remove();
+    //
+    //
+    //
+    // todo: undo button
 }
 function RemoveSingleItem(id) {
     var anchor = document.querySelector('div[data-id=\'' + id + '\']');
     anchor.remove();
+    // todo: undo button
 }
