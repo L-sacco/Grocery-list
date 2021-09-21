@@ -78,9 +78,10 @@ body {
 }
 
 .list-container {
+    visibility: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     background-color: white;
     width: 500px;
@@ -88,6 +89,20 @@ body {
     box-shadow: 0 0 3px cornflowerblue;
     border-radius: 10px;
     margin: 30px;
+}
+
+.show {
+    visibility: visible !important;
+}
+
+.clearBtn-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+    border-bottom: .1px solid cornflowerblue;
 }
 
 .clear-btn {
@@ -99,5 +114,40 @@ body {
     border: none;
     outline: none;
     background-color: white;
-    color: cornflowerblue;
+    color: red;
+    cursor: pointer;
+}
+.clear-btn:active {
+    transform: scale(97%);
+}
+
+.list {
+    display: flex;
+    font-family: 'Koh Santepheap', cursive;
+    color: blue;
+    padding: 7px;
+    width: 100%;
+}
+.single-remove-btn {
+    outline: none;
+    border: none;
+    background: none;
+    margin-left: auto;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.single-remove-btn:active {
+    transform: scale(90%);
+}
+.item {
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 1px;
+    max-width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.item::before {
+    content: "• ";
 }
