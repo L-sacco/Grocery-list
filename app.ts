@@ -47,7 +47,7 @@ function BackToDefault() {
 function RemoveEverything() {
     //
     //
-    //
+    // itemCounter = 0;
 
     // todo: undo button
 }
@@ -55,6 +55,12 @@ function RemoveEverything() {
 function RemoveSingleItem(id) {
     let anchor = document.querySelector('div[data-id=\'' + id + '\']');
     anchor.remove();
+    itemCounter--;
+
+    if (itemCounter == 0) { 
+        BackToDefault();
+        list.classList.remove('show');
+    }
 
     // todo: undo button
 }
