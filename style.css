@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 238, 255);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    width: 450px;
+    height: 150px;
+    border-radius: 12px;
+    box-shadow: 
+        0 0 12px rgba(75, 75, 75, 0.3);
+}
+
+.form-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 33%;
+}
+
+.form-title p {
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 26px;
+    font-weight: 400;
+    padding: 25px;
+}
+
+#grocery-input {
+    width: 280px;
+    height: 35px;
+    border-radius: 8px 0 0 8px;
+    border: .1px solid rgba(75, 75, 75, 0.3);
+    padding: 10px;
+    outline: none;
+}
+
+#grocery-input:focus {
+    border: 2px solid cornflowerblue;
+}
+
+.submit-btn {
+    position: relative;
+    left: -4px;
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 14px;
+    background-color: cornflowerblue;
+    color: white;
+    width: 80px;
+    height: 35px;
+    border-radius: 0 8px 8px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.submit-btn:active {
+    transform: scale(97%);
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    box-shadow: 0 0 3px cornflowerblue;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.clear-btn {
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 16px;
+    letter-spacing: 2px;
+    width: auto;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: cornflowerblue;
+}
