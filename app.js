@@ -17,12 +17,13 @@ function AddItem(ev) {
     BackToDefault();
 }
 function CreateElement(value) {
-    var itemID = new Date().getTime().toString();
+    var itemID = new Date().getTime().toString(); // Unique ID using datetime
     var element = document.createElement('div');
-    element.classList.add('list');
-    var attr = document.createAttribute('data-id');
-    attr.value = itemID;
+    element.classList.add('list'); // Adding the class 'list' to the div just created
+    var attr = document.createAttribute('data-id'); // creating data-id attribute and
+    attr.value = itemID; //  setting it to itemID (datatime id)   
     element.setAttributeNode(attr);
+    // Creates the new item on dom, inside 'list-container' div after the clearBtn div 
     element.innerHTML =
         "<p class='item'>" + input.value +
             "</p><button class='single-remove-btn' onclick='RemoveSingleItem(" + itemID +
@@ -31,7 +32,7 @@ function CreateElement(value) {
     AddToLocalStorage(itemID, input.value);
 }
 function AddToLocalStorage(id, value) {
-    console.log("added");
+    console.log("added in local storage with id:" + id + " & value:" + value);
 }
 function BackToDefault() {
     input.value = "";
