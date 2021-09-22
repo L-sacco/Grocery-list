@@ -53,7 +53,6 @@ function RemoveSingleItem(id) {
         list.classList.remove('show');
         searchForm.classList.remove('show');
     }
-    // todo: undo button
 }
 function ClearList() {
     var items = Array.from(document.querySelectorAll('.list'));
@@ -68,7 +67,6 @@ function ClearList() {
     }
 }
 function Highlight(item, val) {
-    //RemoveHighlight(item, val);
     item.classList.add('highlighted');
 }
 function RemoveHighlight(items, val) {
@@ -90,5 +88,5 @@ function SearchItem(ev) {
     });
     if (flag == 0)
         alert("no items found");
-    //items.filter(item => item === val ? console.log(item) : console.log("no"))
+    //items.filter(item => item === val ? console.log(item) : console.log("0"))
 }
