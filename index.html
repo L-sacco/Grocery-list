@@ -16,13 +16,19 @@
             <div class="form-title">
                 <p>Grocery List</p>
             </div>
-            <input id="grocery-input" type="text" placeholder="Insert an item..." value="" required>
+            <input id="grocery-input" type="text" placeholder="Insert an item..." value="" autocomplete="off" required>
             <button class="submit-btn" type="submit">Add</button>
+        </form>
+    </div>
+    <div class="search-container">
+        <form class="search-form">
+            <input id="search-input" type="text" placeholder="Search for an item..." value="" autocomplete="off" required>
+            <button class="submit-btn" type="submit">Search</button>
         </form>
     </div>
     <div class="list-container">
         <div class="clearBtn-div">
-            <button class="clear-btn" onclick="RemoveEverything()">Clear list</button>
+            <button class="clear-btn" onclick="ClearList()">Clear list</button>
         </div>
     </div>
 </body>

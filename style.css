@@ -32,6 +32,19 @@ body {
         0 0 12px rgba(75, 75, 75, 0.3);
 }
 
+.highlighted {
+    background: rgba(0, 255, 0, 0.5);
+}
+
+.search-container {
+    background: transparent;
+    width: auto;
+    margin: 30px;
+}
+.search-form {
+    visibility: hidden;
+}
+
 .form-title {
     display: flex;
     justify-content: center;
@@ -46,7 +59,8 @@ body {
     padding: 25px;
 }
 
-#grocery-input {
+#grocery-input,
+#search-input {
     width: 280px;
     height: 35px;
     border-radius: 8px 0 0 8px;
@@ -55,7 +69,8 @@ body {
     outline: none;
 }
 
-#grocery-input:focus {
+#grocery-input:focus,
+#search-input:focus {
     border: 2px solid cornflowerblue;
 }
 
@@ -103,6 +118,7 @@ body {
     align-items: center;
     margin-bottom: auto;
     border-bottom: .1px solid cornflowerblue;
+    border-radius: 8px;
 }
 
 .clear-btn {
@@ -124,7 +140,7 @@ body {
 .list {
     display: flex;
     font-family: 'Koh Santepheap', cursive;
-    color: blue;
+    color: cornflowerblue;
     padding: 7px;
     width: 100%;
 }
@@ -141,7 +157,8 @@ body {
 }
 .item {
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
     letter-spacing: 1px;
     max-width: 90%;
     text-overflow: ellipsis;
