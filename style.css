@@ -63,10 +63,11 @@ body {
 #search-input {
     width: 280px;
     height: 35px;
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px;
     border: .1px solid rgba(75, 75, 75, 0.3);
     padding: 10px;
     outline: none;
+    margin: 0 5px;
 }
 
 #grocery-input:focus,
@@ -83,13 +84,19 @@ body {
     color: white;
     width: 80px;
     height: 35px;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px;
     outline: none;
     border: none;
     cursor: pointer;
 }
 .submit-btn:active {
     transform: scale(97%);
+}
+
+.quantity {
+    position: relative;
+    left: -50px;
+    outline: none;
 }
 
 .list-container {
